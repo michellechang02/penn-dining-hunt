@@ -6,6 +6,7 @@
 
 import SwiftUI
 import CoreLocation
+import Foundation
 
 // Remove the ViewModel class from here since it seems to be defined elsewhere
 // class DiningHallViewModel: ObservableObject { ... }
@@ -112,12 +113,4 @@ class DiningHallViewModel: ObservableObject {
     }
 }
 
-// MARK: - Model
-struct DiningHall: Identifiable {
-    let id: String
-    let name: String
-    let description: String
-    let image: String
-    let latitude: Double
-    let longitude: Double
-}
+
