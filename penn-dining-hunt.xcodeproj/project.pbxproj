@@ -29,9 +29,22 @@
 		360A73F52D846B030003DBAA /* penn-dining-huntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "penn-dining-huntUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C7DC2FAA2D92678D00E45A6C /* Exceptions for "penn-dining-hunt" folder in "penn-dining-hunt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 360A73DA2D846B010003DBAA /* penn-dining-hunt */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		360A73DD2D846B010003DBAA /* penn-dining-hunt */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C7DC2FAA2D92678D00E45A6C /* Exceptions for "penn-dining-hunt" folder in "penn-dining-hunt" target */,
+			);
 			path = "penn-dining-hunt";
 			sourceTree = "<group>";
 		};
@@ -396,9 +409,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"penn-dining-hunt/Preview Content\"";
-				DEVELOPMENT_TEAM = FS597CTR28;
+				DEVELOPMENT_TEAM = PP7M6GZ54Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "penn-dining-hunt/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to verify when you're near dining halls.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -425,9 +440,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"penn-dining-hunt/Preview Content\"";
-				DEVELOPMENT_TEAM = FS597CTR28;
+				DEVELOPMENT_TEAM = PP7M6GZ54Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "penn-dining-hunt/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to verify when you're near dining halls.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

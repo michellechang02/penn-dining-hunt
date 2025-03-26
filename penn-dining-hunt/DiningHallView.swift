@@ -49,22 +49,6 @@ struct DiningHallView: View {
                         .fontWeight(.bold)
                         .padding()
                     
-                    // Canvas for drawing scribbles - uncomment if using scribble method instead
-                    // Canvas { context, size in
-                    //     for point in scribblePoints {
-                    //         context.fill(Path(ellipseIn: CGRect(x: point.x - 5, y: point.y - 5, width: 10, height: 10)), with: .color(.blue))
-                    //     }
-                    // }
-                    // .frame(height: 200)
-                    // .background(Color.gray.opacity(0.2))
-                    // .cornerRadius(12)
-                    // .gesture(
-                    //     DragGesture(minimumDistance: 0)
-                    //         .onChanged { value in
-                    //             scribblePoints.append(value.location)
-                    //             checkScribble()
-                    //         }
-                    // )
                 }
             }
             
@@ -129,29 +113,4 @@ struct DiningHallView: View {
         isCollecting = false
     }
     
-    // Uncomment if using scribble method instead
-    // private func checkScribble() {
-    //     // Need at least a few points to detect a scribble
-    //     guard scribblePoints.count > 10 else { return }
-    //     
-    //     // Simple algorithm: check if the horizontal direction changes a few times
-    //     var directionChanges = 0
-    //     var lastDirection: CGFloat?
-    //     
-    //     for i in 1..<scribblePoints.count {
-    //         let currentDirection = scribblePoints[i].x - scribblePoints[i-1].x
-    //         
-    //         if let last = lastDirection, (last > 0 && currentDirection < 0) || (last < 0 && currentDirection > 0) {
-    //             directionChanges += 1
-    //         }
-    //         
-    //         lastDirection = currentDirection
-    //     }
-    //     
-    //     // If direction changes at least 4 times, consider it a scribble
-    //     if directionChanges >= 4 {
-    //         attemptCollection()
-    //         scribblePoints = [] // Reset points after collection attempt
-    //     }
-    // }
 } 
